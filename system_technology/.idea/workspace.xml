@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="935dcefe-d506-47b0-bc70-edb76ceb127c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/9404.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/9404.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/9404.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/9404.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/9404.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fonts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/bg_header.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/Polygon 2.1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/Polygon 2.2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/Polygon 2.3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/Polygon 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/Vector1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/boy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/footer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/icon_orange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/logo_header.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/mess.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/people.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/phone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/service_1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/service_2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/service_3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/service_4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/service_5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/service_6.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/service_7.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/service_8.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/vector2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/vector3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/vector4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/vector5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/vector6.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/img_header.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/mess_img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/main.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1nCEROva5uwyPoQIMsHOffcBDTv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/system_technology/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="935dcefe-d506-47b0-bc70-edb76ceb127c" name="Default Changelist" comment="" />
+      <created>1610885663466</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610885663466</updated>
+      <workItem from="1610885664792" duration="24660000" />
+      <workItem from="1610970406575" duration="9751000" />
+      <workItem from="1610991462394" duration="3681000" />
+      <workItem from="1611012722851" duration="2070000" />
+      <workItem from="1611561895460" duration="5375000" />
+      <workItem from="1611655442723" duration="187000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
