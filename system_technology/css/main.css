@@ -83,7 +83,7 @@ body {
 }
 
 header {
-  background: url("../img/bg_header.png") no-repeat;
+  background: url("../img/bg_header.webp") no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
