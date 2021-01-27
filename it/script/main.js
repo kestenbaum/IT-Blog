@@ -2,7 +2,10 @@
 
 let burger = document.querySelector('.burger'),
     header = document.querySelector('.header__right'),
-    headerLink = document.querySelectorAll('.header__link')
+    headerLink = document.querySelectorAll('.header__link'),
+    input = document.querySelector('.input_sub'),
+    btnSub = document.querySelector('.btn__sub')
+
 
 burger.onclick = function (){
     burger.classList.toggle('burger__active')

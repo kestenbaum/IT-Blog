@@ -87,6 +87,7 @@ body{
   font-family: 'FuturaPt-Book', sans-serif;
   font-weight: normal;
   font-style: normal;
+  transition-duration: 1s;
 }
 
 .visually-hidden {
@@ -120,14 +121,16 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  z-index: 999;
 }
 
 .header__wrapper{
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  top: 0;
-  width: 100%;
   height: 70px;
   align-items: center;
   background: white;
@@ -314,9 +317,12 @@ article{
   grid-column: 3 span;
   min-height: 280px;
   margin-bottom: 40px;
+  transition-duration: .2s;
   a{
     &:hover{
       background: #5D71DD;
+      box-shadow: 4px 8px 40px rgba(8, 24, 111, 0.2);
+      transition-duration: .2s;
       h2{
         color: white;
       }
@@ -350,7 +356,7 @@ article{
 .post__list{
   background: #FFFFFF;
   border-radius: 20px;
-  transition: all .3s linear;
+  transition-duration: .6s;
   @media all and (max-width: 900px) {
     grid-column: 4 span !important;
     grid-row: 1 span !important;
@@ -414,9 +420,8 @@ article{
   grid-column: 1 span;
   grid-row: 2 span;
   a{
-    &:hover{
-      background: rgba(0, 0, 0, 0.15);
-    }
+    width: 100% !important;
+    height: 100% !important;
     .cat{
       color: white;
       background: rgba(255, 255, 255, 0.2);
@@ -509,10 +514,7 @@ article{
   height: 100%;
   background: #FFFFFF;
   border-radius: 20px;
-  transition: all .3s linear;
-  &:hover{
-    box-shadow: 4px 8px 40px rgba(8, 24, 111, 0.2);
-  }
+  transition-duration: .6s;
   h2{
     margin-top: 107px;
     margin-bottom: 60px;
@@ -533,6 +535,25 @@ article{
   }
   h2, p{
     padding: 0 40px;
+  }
+  &:hover{
+    background: #5D71DD;
+    box-shadow: 4px 8px 40px rgba(8, 24, 111, 0.8);
+    transition-duration: .6s;
+    h2{
+      color: white;
+    }
+    .cat{
+      color: white;
+      background: #7D8DE4;
+      border-radius: 8px;
+    }
+    .data{
+      color: white;
+    }
+    p{
+      color: white;
+    }
   }
 }
 
@@ -591,6 +612,14 @@ article{
     @media all and (max-width: 400px) {
       margin: 5px;
     }
+    a{
+      color: #2F2222;
+      transition-duration: .2s;
+      &:hover{
+        color: #5D71DD;
+        transition-duration: .2s;
+      }
+    }
   }
 }
 
@@ -600,6 +629,7 @@ article{
   padding: 10px 16px;
   background: rgba(93, 113, 221, 0.05);
   border-radius: 8px;
+  transition-duration: .6s;
   &:hover{
     background: rgba(93, 113, 221, 0.15);
   }
@@ -683,6 +713,9 @@ article{
 }
 
 .news__list{
+  h3{
+    transition-duration: .6s;
+  }
   @media all and (max-width: 1350px) {
     flex: 1 1 33.333%;
     margin: 0 10px;
