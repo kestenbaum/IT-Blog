@@ -107,6 +107,12 @@ body{
   padding: 0 15px;
 }
 
+.container__header{
+  width: 100%;
+  max-width: 1430px;
+  margin: 0 auto;
+}
+
 
 //header
 
@@ -119,9 +125,14 @@ header{
 .header__wrapper{
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
   height: 70px;
   align-items: center;
   background: white;
+  padding: 0 15px;
+  z-index: 99;
 }
 
 .logo{
@@ -133,16 +144,44 @@ header{
 
 .header__right{
   display: flex;
+  transition-duration: .4s;
   @media all and (max-width: 810px) {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    background: #E5E5E5;
+    z-index: 1;
+    overflow: auto;
+    transition-duration: .4s;
   }
+  @media all and (max-width: 650px ){
+    width: 100%;
+  }
+}
+
+.header__active{
+  right: 0;
+  transition-duration: .4s;
 }
 
 nav{
   ul{
     display: flex;
+    @media all and (max-width: 810px) {
+      flex-direction: column;
+    }
     li{
       margin: 0 20px;
+      @media all and (max-width: 810px){
+          margin: 25px 0;
+          text-align: center;
+      }
       a{
         font-family: Futura PT,sans-serif;
         font-style: normal;
@@ -169,6 +208,11 @@ nav{
   img{
     margin-right: 10px;
   }
+  @media all and (max-width: 810px) {
+    position: absolute;
+    bottom: 25px;
+    margin: 0;
+  }
 }
 
 
@@ -182,7 +226,10 @@ nav{
 .burger{
   position: relative;
   height: 40px;
-  width: 40px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 2;
+  transition: right .1s ease-out;
   span{
     position: absolute;
     top: 50%;
@@ -196,6 +243,7 @@ nav{
       height: 3px;
       width: 100%;
       background: #2F2222;
+      transition-duration: .2s;
     }
     &:before{
       content: '';
@@ -204,14 +252,34 @@ nav{
       width: 100%;
       transform: translateY(7px);
       background: #2F2222;
+      transition-duration: .2s;
     }
   }
 }
+
+.burger__active{
+  span {
+    height: 0;
+    transition-duration: 0s;
+
+    &:after {
+      transform: rotate(-45deg);
+      transition-duration: .2s;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+      transition-duration: .2s;
+    }
+  }
+}
+
 
 //main
 
 main{
   background-color: #E5E5E5;
+  margin-top: 70px;
 }
 
 .page__info{
@@ -482,6 +550,10 @@ article{
   top: 40px;
   left: 40px;
   color: #5D71DD;
+  @media all and (max-width: 400px) {
+    top: 20px;
+    left: 20px;
+  }
 }
 
 //data
@@ -499,6 +571,11 @@ article{
   color: rgba(47, 34, 34, 0.4);
   top: 40px;
   right: 40px;
+  @media all and (max-width: 400px) {
+    top: 20px;
+    right: 20px;
+    padding: 8px 0;
+  }
 }
 
 //page_list
@@ -726,7 +803,9 @@ footer{
 
 
 nav{
-  ul{
+  .footer__list{
+    display: flex;
+    flex-direction: row;
     li{
       margin: 0 40px !important;
       @media all and (max-width: 610px) {
