@@ -101,6 +101,9 @@
     label {
       input {
         margin-bottom: 20px;
+        &:focus {
+          color: #2F2222;
+        }
       }
       textarea{
         width: 100%;
@@ -121,6 +124,7 @@
         }
         &:focus{
           border: 1.5px solid #2F2222;
+          color: #2F2222;
         }
         &:focus::placeholder{
           color: transparent;

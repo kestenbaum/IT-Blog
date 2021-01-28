@@ -111,6 +111,9 @@
 .form form label input {
   margin-bottom: 20px;
 }
+.form form label input:focus {
+  color: #2F2222;
+}
 .form form label textarea {
   width: 100%;
   height: 81px;
@@ -131,6 +134,7 @@
 }
 .form form label textarea:focus {
   border: 1.5px solid #2F2222;
+  color: #2F2222;
 }
 .form form label textarea:focus::placeholder {
   color: transparent;
