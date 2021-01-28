@@ -29,6 +29,11 @@
   flex-direction: column;
   width: 307px;
 }
+@media all and (max-width: 568px) {
+  .contact-info {
+    padding: 0 15px;
+  }
+}
 .contact-info span {
   margin-bottom: 30px;
   font-family: Futura PT, sans-serif;
@@ -43,22 +48,33 @@
     text-align: center;
   }
 }
+@media all and (max-width: 568px) {
+  .contact-info span {
+    margin: 0;
+  }
+}
 .contact-info a {
   justify-content: flex-start;
   margin-bottom: 20px;
   margin-left: 0;
 }
+@media all and (max-width: 568px) {
+  .contact-info a {
+    margin: 15px 0;
+  }
+}
 
 .icons_social {
   display: flex;
+  flex-wrap: wrap;
 }
 .icons_social li {
-  margin: 0 10px;
+  margin: 0 10px 10px 10px;
 }
-.icons_social li:first-child {
+.icons_social li:nth-child(5n+1) {
   margin-left: 0;
 }
-.icons_social li:last-child {
+.icons_social li:nth-child(5n+5) {
   margin-right: 0;
 }
 

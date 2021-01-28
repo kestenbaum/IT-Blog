@@ -1,0 +1,47 @@
+.error_wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 70px;
+}
+
+.error_wrap img{
+    width: 326px;
+    height: 326px;
+    margin-bottom: 40px;
+}
+
+.error_wrap span{
+    font-family: Futura PT, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 38px;
+    color: #2F2222;
+    margin-bottom: 40px;
+}
+
+.button__page img{
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    transform: rotate(180deg);
+}
+
+.button__page span{
+    font-family: Futura PT, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #5D71DD;
+    margin: 0 0 0 10px;
+}
+
+@media all and (max-width: 568px){
+    .error_wrap span{
+        font-size: 24px;
+    }
+}
