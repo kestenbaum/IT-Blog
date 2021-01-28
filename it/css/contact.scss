@@ -26,6 +26,9 @@
   display: flex;
   flex-direction: column;
   width: 307px;
+  @media all and (max-width: 568px) {
+    padding: 0 15px;
+  }
   span{
     margin-bottom: 30px;
     font-family: Futura PT, sans-serif;
@@ -37,23 +40,30 @@
     @media all and (max-width: 1140px) {
       text-align: center;
     }
+    @media all and (max-width: 568px) {
+      margin: 0;
+    }
   }
   a{
     justify-content: flex-start;
     margin-bottom: 20px;
     margin-left: 0;
+    @media all and (max-width: 568px) {
+      margin: 15px 0;
+    }
   }
 }
 
 .icons_social{
   display: flex;
+  flex-wrap: wrap;
   li {
-    margin: 0 10px;
+    margin: 0 10px 10px 10px;
   }
-  li:first-child{
+  li:nth-child(5n+1){
     margin-left: 0;
   }
-  li:last-child{
+  li:nth-child(5n+5){
     margin-right: 0;
   }
 }
