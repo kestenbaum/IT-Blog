@@ -112,6 +112,10 @@ body {
   margin: 0 auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -626,6 +630,7 @@ article a:hover p {
   font-weight: normal;
   font-size: 18px;
   line-height: 23px;
+  margin-bottom: 10px;
   color: rgba(47, 34, 34, 0.4);
 }
 .post__item h2, .post__item p {
@@ -668,7 +673,7 @@ article a:hover p {
   left: 40px;
   color: #5D71DD;
 }
-@media all and (max-width: 400px) {
+@media all and (max-width: 505px) {
   .cat {
     top: 20px;
     left: 20px;
@@ -689,7 +694,7 @@ article a:hover p {
   top: 40px;
   right: 40px;
 }
-@media all and (max-width: 400px) {
+@media all and (max-width: 505px) {
   .data {
     top: 20px;
     right: 20px;
