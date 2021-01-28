@@ -279,6 +279,128 @@ nav ul li a:hover {
   transition-duration: 0.2s;
 }
 
+.search__line {
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  max-width: 1040px;
+  transition-duration: 0.4s;
+}
+
+.search__active {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  padding: 0 25px;
+  transition-duration: 0.4s;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  box-shadow: 4px 8px 40px rgba(8, 24, 111, 0.2);
+  border-radius: 20px;
+  background: white;
+}
+.search label {
+  flex: 1 1 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search label input {
+  width: 100%;
+  background: #F5F5F5;
+  border-radius: 20px;
+  padding: 14px 0 14px 60px;
+  margin-left: 40px;
+}
+@media all and (max-width: 470px) {
+  .search label input {
+    margin-left: 10px;
+    padding: 14px 0 14px 10px;
+  }
+}
+.search label input:hover {
+  background: #F9F9F9;
+}
+.search label input:focus {
+  border: 1.5px solid #2F2222;
+}
+.search label input:focus::placeholder {
+  color: transparent;
+}
+.search .btn__search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 196px;
+  height: 50px;
+  background: #5D71DD;
+  border-radius: 20px;
+  margin: 0 40px;
+}
+@media all and (max-width: 865px) {
+  .search .btn__search {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
+@media all and (max-width: 470px) {
+  .search .btn__search {
+    margin: 0 10px;
+  }
+}
+.search .btn__search span {
+  color: white;
+}
+@media all and (max-width: 865px) {
+  .search .btn__search span {
+    display: none;
+  }
+}
+.search .btn__search img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+@media all and (max-width: 865px) {
+  .search .btn__search img {
+    margin: 0;
+  }
+}
+
+.result {
+  margin-top: 70px;
+  height: 100vh;
+  background: #E5E5E5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.result span:first-child {
+  font-family: Futura PT, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 38px;
+  color: #2F2222;
+  margin-bottom: 20px;
+}
+.result span:last-child {
+  font-family: Futura PT, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: rgba(47, 34, 34, 0.4);
+}
+
 main {
   background-color: #E5E5E5;
   margin-top: 70px;
