@@ -281,6 +281,121 @@ nav{
 }
 
 
+//search
+
+.search__line{
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  max-width: 1040px;
+  transition-duration: .4s;
+}
+
+.search__active{
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  padding: 0 25px;
+  transition-duration: .4s;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  box-shadow: 4px 8px 40px rgba(8, 24, 111, 0.2);
+  border-radius: 20px;
+  background: white;
+  label{
+    flex: 1 1 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input{
+      width: 100%;
+      background: #F5F5F5;
+      border-radius: 20px;
+      padding: 14px 0 14px 60px;
+      margin-left: 40px;
+      @media all and (max-width: 470px){
+        margin-left: 10px;
+        padding: 14px 0 14px 10px;
+      }
+      &:hover{
+        background:#F9F9F9;
+      }
+      &:focus{
+        border: 1.5px solid #2F2222;
+      }
+      &:focus::placeholder{
+        color: transparent;
+      }
+    }
+  }
+  .btn__search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 196px;
+    height: 50px;
+    background: #5D71DD;
+    border-radius: 20px;
+    margin: 0 40px;
+    @media all and (max-width: 865px){
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    @media all and (max-width: 470px){
+      margin: 0 10px;
+    }
+    span{
+      color: white;
+      @media all and (max-width: 865px){
+        display: none;
+      }
+    }
+    img{
+      width: 20px;
+      height: 20px;
+      margin-left: 10px;
+      @media all and (max-width: 865px){
+       margin: 0;
+      }
+    }
+  }
+}
+
+.result{
+  margin-top: 70px;
+  height: 100vh;
+  background: #E5E5E5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  span:first-child{
+    font-family: Futura PT, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 38px;
+    color: #2F2222;
+    margin-bottom: 20px;
+  }
+  span:last-child{
+    font-family: Futura PT, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: rgba(47, 34, 34, 0.4);
+  }
+}
+
+
 //main
 
 main{
