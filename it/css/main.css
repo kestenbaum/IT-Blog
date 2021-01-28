@@ -763,7 +763,7 @@ article a:hover p {
   font-size: 24px;
   line-height: 31px;
   color: #2F2222;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 @media all and (max-width: 810px) {
   .sidebar h2 {
@@ -932,6 +932,14 @@ article a:hover p {
 }
 .form form button img {
   margin-left: 10px;
+}
+
+.input_sub {
+  margin-bottom: 20px;
+}
+
+.btn__sub {
+  margin: 0 0 20px 0 !important;
 }
 
 footer {
