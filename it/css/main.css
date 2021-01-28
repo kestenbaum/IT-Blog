@@ -152,7 +152,6 @@ header {
     height: 100vh;
     width: 50%;
     align-items: center;
-    justify-content: center;
     background: #E5E5E5;
     z-index: 1;
     overflow: auto;
@@ -170,8 +169,14 @@ header {
   transition-duration: 0.4s;
 }
 
+@media all and (max-width: 810px) {
+  nav {
+    margin-top: 70px;
+  }
+}
 nav ul {
   display: flex;
+  flex-wrap: wrap;
 }
 @media all and (max-width: 810px) {
   nav ul {
@@ -213,9 +218,8 @@ nav ul li a:hover {
 }
 @media all and (max-width: 810px) {
   .tel {
-    position: absolute;
     bottom: 25px;
-    margin: 0;
+    margin: 25px 0;
   }
 }
 
@@ -331,9 +335,6 @@ article a:hover .data {
 }
 article a:hover p {
   color: white;
-}
-article a p {
-  margin-bottom: 52px !important;
 }
 
 .post {
@@ -453,12 +454,6 @@ article a p {
 .post__list:nth-child(5n+4) a:hover p {
   color: white;
 }
-.post__list:nth-child(5n+4) h2 {
-  margin-top: 87px;
-}
-.post__list:nth-child(5n+4) p {
-  margin-bottom: 31px;
-}
 
 .post__list:nth-child(5n+5) {
   grid-column: 2 span;
@@ -482,12 +477,6 @@ article a p {
 .post__list:nth-child(5n+5) a:hover p {
   color: white;
 }
-.post__list:nth-child(5n+5) h2 {
-  margin-top: 87px;
-}
-.post__list:nth-child(5n+5) p {
-  margin-bottom: 31px;
-}
 
 .post__item {
   position: relative;
@@ -498,10 +487,11 @@ article a p {
   background: #FFFFFF;
   border-radius: 20px;
   transition-duration: 0.6s;
+  padding-top: 107px;
+  padding-bottom: 60px;
 }
 .post__item h2 {
-  margin-top: 107px;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
   font-family: Futura PT, sans-serif;
   font-style: normal;
   font-weight: 450;
@@ -514,11 +504,15 @@ article a p {
   font-weight: normal;
   font-size: 18px;
   line-height: 23px;
-  margin-bottom: 119px;
   color: rgba(47, 34, 34, 0.4);
 }
 .post__item h2, .post__item p {
   padding: 0 40px;
+}
+@media all and (max-width: 500px) {
+  .post__item h2, .post__item p {
+    padding: 0 20px;
+  }
 }
 .post__item:hover {
   background: #5D71DD;
@@ -657,6 +651,8 @@ article a p {
 }
 .news__list a {
   display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
   height: 100%;
   width: 100%;
   min-height: 80px;
@@ -672,7 +668,7 @@ article a p {
   font-size: 18px;
   line-height: 23px;
   color: #2F2222;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 .news__list a .data {
   top: calc(100% - 40px);
@@ -830,15 +826,19 @@ footer {
   }
 }
 
-nav .footer__list {
+.footer__nav {
+  margin-top: 0;
+}
+.footer__nav .footer__list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
-nav .footer__list li {
+.footer__nav .footer__list li {
   margin: 0 40px !important;
 }
 @media all and (max-width: 610px) {
-  nav .footer__list li {
+  .footer__nav .footer__list li {
     margin: 0 10px !important;
   }
 }
