@@ -1,0 +1,121 @@
+.grid_element{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.contact-wrapper {
+  display: flex;
+  padding: 140px 0;
+  min-height: calc(100vh - 70px);
+  @media all and (max-width: 1140px) {
+    flex-direction: column-reverse;
+    padding: 40px 0;
+  }
+}
+
+.contact-wrapper__info{
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  width: 307px;
+  span{
+    margin-bottom: 30px;
+    font-family: Futura PT, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+    color: #2F2222;
+    @media all and (max-width: 1140px) {
+      text-align: center;
+    }
+  }
+  a{
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+}
+
+.icons_social{
+  display: flex;
+  li {
+    margin: 0 10px;
+  }
+  li:first-child{
+    margin-left: 0;
+  }
+  li:last-child{
+    margin-right: 0;
+  }
+}
+
+
+.contact-wrapper__form{
+  display: flex;
+  align-items: center;
+  flex:  1 1 50%;
+  @media all and (max-width: 1140px) {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+}
+
+.subscribe_wrapper{
+  width: 560px;
+  box-shadow: 4px 8px 40px rgba(8, 24, 111, 0.2);
+  border-radius: 20px;
+  h2{
+    font-family: Futura PT, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 38px;
+    color: #2F2222;
+    margin-bottom: 30px;
+  }
+}
+
+
+.form{
+  form{
+    flex-direction: column;
+    label {
+      input {
+        margin-bottom: 20px;
+      }
+      textarea{
+        width: 100%;
+        height: 81px;
+        background: #F5F5F5;
+        border-radius: 20px;
+        padding: 13px 0 13px 30px;
+        font-family: Futura PT,sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+        color: rgba(47, 34, 34, 0.4);
+        margin-bottom: 20px;
+        resize: none;
+        &:hover{
+          background:#F9F9F9;
+        }
+        &:focus{
+          border: 1.5px solid #2F2222;
+        }
+        &:focus::placeholder{
+          color: transparent;
+        }
+      }
+    }
+  }
+}

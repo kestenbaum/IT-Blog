@@ -1,0 +1,123 @@
+.grid_element {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.contact-wrapper {
+  display: flex;
+  padding: 140px 0;
+  min-height: calc(100vh - 70px);
+}
+@media all and (max-width: 1140px) {
+  .contact-wrapper {
+    flex-direction: column-reverse;
+    padding: 40px 0;
+  }
+}
+
+.contact-wrapper__info {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  width: 307px;
+}
+.contact-info span {
+  margin-bottom: 30px;
+  font-family: Futura PT, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 38px;
+  color: #2F2222;
+}
+@media all and (max-width: 1140px) {
+  .contact-info span {
+    text-align: center;
+  }
+}
+.contact-info a {
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+
+.icons_social {
+  display: flex;
+}
+.icons_social li {
+  margin: 0 10px;
+}
+.icons_social li:first-child {
+  margin-left: 0;
+}
+.icons_social li:last-child {
+  margin-right: 0;
+}
+
+.contact-wrapper__form {
+  display: flex;
+  align-items: center;
+  flex: 1 1 50%;
+}
+@media all and (max-width: 1140px) {
+  .contact-wrapper__form {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+}
+
+.subscribe_wrapper {
+  width: 560px;
+  box-shadow: 4px 8px 40px rgba(8, 24, 111, 0.2);
+  border-radius: 20px;
+}
+.subscribe_wrapper h2 {
+  font-family: Futura PT, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 38px;
+  color: #2F2222;
+  margin-bottom: 30px;
+}
+
+.form form {
+  flex-direction: column;
+}
+.form form label input {
+  margin-bottom: 20px;
+}
+.form form label textarea {
+  width: 100%;
+  height: 81px;
+  background: #F5F5F5;
+  border-radius: 20px;
+  padding: 13px 0 13px 30px;
+  font-family: Futura PT, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: rgba(47, 34, 34, 0.4);
+  margin-bottom: 20px;
+  resize: none;
+}
+.form form label textarea:hover {
+  background: #F9F9F9;
+}
+.form form label textarea:focus {
+  border: 1.5px solid #2F2222;
+}
+.form form label textarea:focus::placeholder {
+  color: transparent;
+}
+
+/*# sourceMappingURL=contact.css.map */
