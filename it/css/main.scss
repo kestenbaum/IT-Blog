@@ -322,7 +322,7 @@ nav{
       background: #F5F5F5;
       border-radius: 20px;
       padding: 14px 0 14px 60px;
-      margin-left: 40px;
+      margin: 0 0 0 40px !important;
       @media all and (max-width: 470px){
         margin-left: 10px;
         padding: 14px 0 14px 10px;
@@ -879,6 +879,7 @@ article{
         line-height: 23px;
         color: rgba(47, 34, 34, 0.4);
         padding: 13px 0 13px 30px;
+        margin-bottom: 20px;
         @media all and (max-width: 400px) {
           font-size: 15px;
         }
@@ -929,9 +930,9 @@ article{
   }
 }
 
-.input_sub{
-  margin-bottom: 20px;
-}
+//.input_sub{
+//  margin-bottom: 20px;
+//}
 
 .btn__sub{
   margin: 0 0 20px 0 !important;
