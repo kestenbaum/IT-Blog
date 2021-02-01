@@ -97,7 +97,6 @@ video {
 .bg__mobile {
   background: url("../img/mob_bg.webp") no-repeat center;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .wrapper {
