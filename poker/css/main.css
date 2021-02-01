@@ -95,7 +95,7 @@ video {
 }
 
 .bg__mobile {
-  background: url("../img/mob_bg.webp") no-repeat center;
+  background: url("../img/bg__mob.webp") no-repeat center;
   background-size: cover;
 }
 
