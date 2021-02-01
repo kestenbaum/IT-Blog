@@ -98,8 +98,14 @@ video{
 .container {
   width: 100%;
   max-width: 1230px;
-  padding: 0 15px;
+  padding: 15px;
   margin: 0 auto;
+}
+
+.bg__mobile{
+  background: url("../img/mob_bg.webp") no-repeat center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 //page
