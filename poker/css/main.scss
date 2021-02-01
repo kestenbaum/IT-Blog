@@ -3,6 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
 
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+
+
+
 /*Обнуление*/
 * {
   padding: 0;
@@ -13,7 +23,6 @@
 
 
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -111,7 +120,11 @@ video{
 //page
 
 .wrapper{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 100%;
   min-height: 100vh;
@@ -121,7 +134,12 @@ video{
 }
 
 .tittle{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin-bottom: 50px;
   @media all and (max-width: 600px) {
@@ -179,25 +197,44 @@ video{
 //nav
 
 .nav{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   @media all and (max-width: 600px) {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 }
 
 .download, .icons{
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 50%;
   flex: 1 1 50%;
 }
 
 .download{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
+  -webkit-box-flex: 0;
+  -ms-flex: none;
   flex: none;
   margin: 0 5px 20px 5px;
   a{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border: 1px solid white;
     padding: 10px;
@@ -205,6 +242,8 @@ video{
     font-size: 18px;
     font-weight: 400;
     span{
+      width: -webkit-max-content;
+      width: -moz-max-content;
       width: max-content;
     }
     img{
@@ -216,9 +255,17 @@ video{
 }
 
 .icons{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
+  -webkit-box-flex: 0;
+  -ms-flex: none;
   flex: none;
   margin: 0 5px 20px 5px;
   li {
@@ -227,8 +274,14 @@ video{
     margin: 0 10px;
     border-radius: 5px;
     a {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
       height: 100%;
       width: 100%;
