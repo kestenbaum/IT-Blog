@@ -13,9 +13,9 @@ let headerMain = document.querySelector('.header-main'),
 window.onscroll = () => scrollFunc()
 
 
-// const obj = {
+// const obj =
 //     a: burger.classList.toggle('burger-active')
-// }
+// // }
 
 function scrollFunc(){
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
@@ -38,6 +38,7 @@ function scrollFunc(){
 burger.onclick = () => {
     burger.classList.toggle('burger-active')
     navMain.classList.toggle('navigation-active')
+
     body.classList.toggle('body-active')
     listCheck()
 }
@@ -51,3 +52,7 @@ function listCheck (){
         }
     }
 }
+
+
+
+
