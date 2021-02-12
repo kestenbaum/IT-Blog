@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
-
+@import "price.css";
+@import "contact.css";
+@import "materials.css";
+@import "work.css";
 /*Обнуление*/
 * {
   padding: 0;
@@ -104,14 +107,15 @@ body{
 
 .header__row{
   align-items: center;
-  @media all and (max-width: 1000px) {
+  @media all and (max-width: 1100px) {
     justify-content: space-between;
     flex-wrap: nowrap;
   }
 }
 
+
 .header__nav{
-  @media all and (max-width: 1000px) {
+  @media all and (max-width: 1100px) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,7 +140,8 @@ body{
 }
 
 .nav__list{
-  @media all and (max-width: 1000px) {
+  flex-wrap: wrap;
+  @media all and (max-width: 1100px) {
     flex-direction: column;
     height: 100vh;
     display: flex;
@@ -147,7 +152,8 @@ body{
 }
 
 .nav__item{
-  @media all and (max-width: 1000px) {
+  padding: 5px;
+  @media all and (max-width: 1100px) {
     margin: 20px 0;
   }
 }
@@ -182,7 +188,7 @@ body{
   display: flex;
   flex-direction: column;
   gap: 7px;
-  @media all and (max-width: 1000px) {
+  @media all and (max-width: 1100px) {
     display: none;
   }
 }
@@ -196,6 +202,9 @@ body{
   padding-left: 30px;
   min-height: 26px;
   background: url("../img/icon/whatsapp (3) 2.webp") no-repeat left center / 26px 26px;
+  &:hover{
+    color: #343B4C;
+  }
 }
 
 .header__phone-order{
@@ -213,6 +222,9 @@ body{
   background-color: $mainColor;
   box-shadow: 0 0 8px rgba(253, 233, 83, 0.5);
   border-radius: 222px;
+  &:hover{
+    color: #343B4C;
+  }
 }
 
 
@@ -220,7 +232,7 @@ body{
 
 .burger{
   display: none;
-  @media all and (max-width: 1000px) {
+  @media all and (max-width: 1100px) {
     display: flex;
     margin-right: 15px;
     z-index: 999;
@@ -285,7 +297,6 @@ body{
 .first__screen{
   background: url("../img/screen__bg.webp") no-repeat left center;
   background-size: cover;
-  padding-bottom: 68px;
 }
 
 .first__row{
@@ -330,13 +341,16 @@ body{
 
 //Card
 
-.card__block-row{
-  padding-bottom: 90px;
+.card__block{
+  transform: translateY(-136px);
 }
 
 .card__col{
-  @media all and (max-width: 770px) {
-    padding-bottom: 70px;
+  justify-content: center;
+  padding-top: 104px;
+  display: flex;
+  @media all and (max-width: 768px) {
+    padding-bottom: 0;
   }
 }
 
@@ -344,13 +358,16 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   background: #FFFFFF;
   border: 1px solid rgba(197, 197, 197, 0.61);
   box-sizing: border-box;
   border-radius: 6px;
   width: 100%;
-  top: -20px;
-  transform: translateY(-35px);
+  padding-top: 106px;
+  @media all and (max-width: 768px) {
+    max-width: 360px;
+  }
 }
 
 .col__card{
@@ -362,11 +379,12 @@ body{
 }
 
 .card__img{
+  position: absolute;
   width: 100%;
-  height: 100%;
   min-height: 160px;
   min-width: 200px;
   transform: translateY(-40%);
+  top: 0;
 }
 
 .group1{
@@ -478,7 +496,7 @@ body{
   right: -51px;
 }
 
-.card__wrap-price{
+.card__price{
   display: flex;
   justify-content: center;
   font-style: normal;
@@ -490,18 +508,11 @@ body{
   margin-bottom: 5px;
 }
 
-.card__wrap-description{
-  display: flex;
-  justify-content: center;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #343B4C;
+
+
+.card__description-services{
   max-width: 262px;
 }
-
 
 //About О нас
 
@@ -510,17 +521,11 @@ body{
   padding: 97px 0 83px 0;
 }
 
-//.about__img{
-//  background: url("../img/screen4.webp") center no-repeat;
-//  background-size: cover;
-//}
-
 .about__img-cls{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
 }
 
 .about__block{
@@ -531,13 +536,6 @@ body{
 .about__tittle{
   display: flex;
   justify-content: flex-start;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 47px;
-  color: #343B4C;
-  margin-bottom: 26px;
-  padding: 0 15px;
   @media all and (max-width: 768px){
     justify-content: center;
   }
@@ -546,16 +544,10 @@ body{
   }
 }
 
-
 .about__description{
-  display: flex;
-  justify-content: flex-start;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 23px;
-  color: #343B4C;
-  padding: 0 15px;
+  text-align: start;
+  margin: 0;
+  padding: 0;
   @media all and (max-width: 768px){
     justify-content: center;
   }
@@ -689,7 +681,7 @@ body{
   margin: 0;
 }
 
-.block2{
+.block__product-bg{
   background: white;
 }
 
@@ -701,16 +693,18 @@ body{
   background: url("../img/map.webp") center no-repeat;
   background-size: cover;
 }
-.form__wrapper-left{
-  order: 1;
-}
 
-.form__wrapper-right{
-  order: 2;
+.map__pain{
+  display: flex;
+  justify-content: flex-end;
   @media all and (max-width: 768px){
-    display: flex;
     justify-content: center;
   }
+}
+
+.form__wrapper{
+  display: flex;
+  justify-content: center;
 }
 
 .form__wrapper-info{
@@ -772,7 +766,13 @@ body{
   margin-bottom: 10px;
 }
 
-.btn-primary{
+.btn:focus{
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.btn__main{
   background: #FDE953;
   box-shadow: 0 0 8px rgba(253, 233, 83, 0.63);
   border-radius: 222px;
@@ -848,6 +848,9 @@ footer{
   line-height: 20px;
   color: #FFFFFF;
   padding-left: 33px;
+  &:hover{
+    color: white;
+  }
 }
 
 .footer__phone{
