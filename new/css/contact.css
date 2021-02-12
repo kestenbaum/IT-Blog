@@ -17,6 +17,8 @@
   line-height: 20px;
   color: #343B4C !important;
   height: 25px;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 .contact__info {
@@ -33,6 +35,16 @@
   font-size: 16px;
   line-height: 20px;
   color: #343B4C;
+}
+
+.phone__contact {
+  margin: 0 !important;
+  align-items: center;
+}
+
+.contact__a {
+  margin: 0;
+  padding: 0 !important;
 }
 
 /*# sourceMappingURL=contact.css.map */
