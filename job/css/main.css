@@ -703,7 +703,7 @@ html {
 }
 
 .acc-wrap {
-  max-width: 760px;
+  margin: 0 auto;
 }
 
 .question-container {
@@ -742,6 +742,14 @@ html {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  white-space: normal;
+  text-align: left;
+}
+
+@media all and (max-width: 760px) {
+  .btn-link {
+    font-size: 18px;
+  }
 }
 
 .block__description {
