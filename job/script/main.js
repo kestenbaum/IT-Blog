@@ -1,27 +1,47 @@
 'use strict'
 
-let tableActive = document.querySelector('.block__description-wrap'),
-    plusActive = document.querySelectorAll('.block__plus')
+let tableActive = document.getElementsByClassName('block__description'),
+    plusActive = document.getElementsByClassName('block__plus'),
+    i
 
-
-for (let a of plusActive){
-    plusActive.onclick = () => plusActive.classList.toggle('block__plus-active')
+for (i = 0; i < plusActive.length; i++){
+  plusActive[i].onclick = function (){
+          this.classList.toggle('plus-active')
+  }
 }
 
-new Swiper('.slider__wrapper',{
+const swiper = new Swiper('.slider-container',{
+        // Navigation arrows
         navigation: {
-                nextE1: '.next',
-                prevE1: '.prev'
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
         },
         autoHeight: true,
         slidesPerView: 1,
         breakpoints: {
           800: {
                   slidesPerView: 2,
-          }
+          },
         },
-})
+});
 
+const swip = new Swiper('.work-slider',{
+        // Navigation arrows
+        navigation: {
+                nextEl: '.next',
+                prevEl: '.prev',
+        },
+        autoHeight: true,
+        slidesPerView: 1,
+        breakpoints: {
+                800: {
+                        slidesPerView: 2,
+                },
+                1148: {
+                        slidesPerView: 3,
+                },
+        },
+});
 
 
 $(document).ready(function (){

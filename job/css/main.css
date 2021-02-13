@@ -109,7 +109,12 @@ html {
   line-height: 30px;
   letter-spacing: -0.035em;
   color: #000000;
-  margin-bottom: 20px;
+  margin: 0;
+  padding: 0;
+}
+.tittle__h3:hover, .tittle__h3:focus, .tittle__h3:active {
+  text-decoration: none;
+  color: #000000;
 }
 @media all and (max-width: 580px) {
   .tittle__h3 {
@@ -493,8 +498,12 @@ html {
   }
 }
 
+.slider__col {
+  min-width: 0;
+}
+
 .slider__block {
-  padding-bottom: 220px;
+  padding-bottom: 90px;
 }
 @media all and (max-width: 600px) {
   .slider__block {
@@ -540,6 +549,49 @@ html {
 .swiper-button-prev::after,
 .swiper-button-next::after {
   color: #000000;
+}
+@media all and (max-width: 630px) {
+  .swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.work-tittle {
+  margin-bottom: 87px;
+}
+@media all and (max-width: 600px) {
+  .work-tittle {
+    margin-bottom: 20px;
+  }
+}
+
+.work__img {
+  max-width: 100%;
+}
+
+.btn__work {
+  display: flex;
+  justify-content: center;
+}
+
+.prev, .next, .cnt {
+  display: flex;
+  width: 91px;
+  height: 12px;
+  background: #C4C4C4;
+  cursor: pointer;
+  margin: 90px 0;
+}
+
+.cnt {
+  background: #E72929;
+  margin: 90px 55px;
 }
 
 .services__wrap-card {
@@ -650,6 +702,10 @@ html {
   height: 38px;
 }
 
+.acc-wrap {
+  max-width: 760px;
+}
+
 .question-container {
   position: relative;
 }
@@ -676,23 +732,16 @@ html {
   padding: 80px 0;
 }
 
-.table__wrapper {
-  background: grey;
+.card-header, .card-body {
+  background-color: white;
+  border: none;
+  padding: 15px;
 }
 
-.block__table {
+.btn {
   display: flex;
-  flex-direction: column;
-  border-bottom: 3px solid #C4C4C4;
-  background: white;
-}
-
-.block__table-active {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  min-height: 80px;
-  padding: 0 15px;
+  width: 100%;
 }
 
 .block__description {
@@ -711,9 +760,16 @@ html {
   width: 31px;
   transition-duration: 0.3s;
   cursor: pointer;
+  transform: rotate(0deg);
+  margin-left: 15px;
 }
 
-.block__plus-active {
+.plus__wrap {
+  transition-duration: 0.3s;
+}
+
+.plus-active {
+  display: flex;
   transform: rotate(45deg);
   transition-duration: 0.3s;
 }
@@ -785,6 +841,7 @@ html {
   line-height: 22px;
   letter-spacing: -0.035em;
   color: #8A8888;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 .form__text:focus::placeholder {
   color: transparent;
@@ -810,6 +867,7 @@ html {
   line-height: 22px;
   letter-spacing: -0.035em;
   color: #8A8888;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 .form__phone:focus::placeholder {
   color: transparent;
