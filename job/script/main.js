@@ -1,7 +1,6 @@
 'use strict'
 
-let tableActive = document.getElementsByClassName('block__description'),
-    plusActive = document.getElementsByClassName('block__plus'),
+let plusActive = document.getElementsByClassName('block__plus'),
     i
 
 for (i = 0; i < plusActive.length; i++){
