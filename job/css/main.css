@@ -127,9 +127,17 @@ html {
   height: 62px;
   color: white;
 }
+.btn__main:active, .btn__main:focus {
+  outline: none;
+  border: none;
+}
+.btn__main:hover {
+  color: white;
+}
 @media all and (max-width: 580px) {
   .btn__main {
     width: 250px;
+    margin-bottom: 25px;
   }
 }
 
@@ -143,6 +151,9 @@ html {
   border-radius: 10px;
   color: white;
 }
+.btn__slider:hover {
+  color: white;
+}
 @media all and (max-width: 580px) {
   .btn__slider {
     width: 250px;
@@ -150,7 +161,8 @@ html {
 }
 
 .active {
-  display: none;
+  background: #E6A603 !important;
+  color: white !important;
 }
 
 .description {
@@ -173,7 +185,7 @@ html {
 
 .header {
   width: 100%;
-  background: url("../img/bg.png") no-repeat center;
+  background: url("../img/bg.webp") no-repeat center;
   background-size: cover;
 }
 
@@ -284,6 +296,9 @@ html {
   line-height: 28px;
   color: #FFFFFF;
 }
+.phone__link:hover {
+  color: white;
+}
 
 .phone__description {
   text-align: end;
@@ -371,7 +386,7 @@ html {
 .sidebar__wrap {
   width: 100%;
   min-height: 409px;
-  background: linear-gradient(139.01deg, #656565 2.84%, #7C7C7C 96.88%);
+  background: rgba(124, 124, 124, 0.9);
   border-radius: 10px;
   padding: 80px 20px;
 }
@@ -429,6 +444,9 @@ html {
   padding: 25px 15px;
   color: white;
 }
+.btn__tab:hover {
+  color: #838383;
+}
 
 .tabs__container {
   display: flex;
@@ -473,13 +491,6 @@ html {
   .tab__span {
     width: 100%;
   }
-}
-
-.container__a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
 }
 
 .slider__block {
@@ -639,11 +650,30 @@ html {
   height: 38px;
 }
 
+.question-container {
+  position: relative;
+}
+
+.question__row, .question__table {
+  position: relative;
+  z-index: 999;
+}
+
+.question-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: #C4C4C4;
+  filter: blur(150px);
+}
+
 .question__table {
   display: flex;
   justify-content: center;
   padding: 80px 0;
-  background: #C4C4C4;
 }
 
 .table__wrapper {
@@ -654,6 +684,7 @@ html {
   display: flex;
   flex-direction: column;
   border-bottom: 3px solid #C4C4C4;
+  background: white;
 }
 
 .block__table-active {
@@ -708,7 +739,7 @@ html {
 }
 
 .form {
-  background: url("../img/bg__form.png") no-repeat center;
+  background: url("../img/bg__form.webp") no-repeat center;
   background-size: cover;
   padding: 67px 0;
 }

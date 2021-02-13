@@ -1,11 +1,11 @@
 'use strict'
 
 let tableActive = document.querySelector('.block__description-wrap'),
-    plusActive = document.querySelector('.block__plus')
+    plusActive = document.querySelectorAll('.block__plus')
 
 
-plusActive.onclick = function (){
-        plusActive.classList.toggle('block__plus-active')
+for (let a of plusActive){
+    plusActive.onclick = () => plusActive.classList.toggle('block__plus-active')
 }
 
 new Swiper('.slider__wrapper',{
@@ -32,10 +32,4 @@ $(document).ready(function (){
         }).eq(0).addClass('active')
 })
 
-$(document).ready(function (){
-        $('.block__description').hide();
-        $('.table__wrapper .block__plus').click(function (){
-                $('.table__wrapper .block__plus').removeClass('active').eq($(this).index()).addClass('active');
-                $('.block__description').hide().eq($(this).index()).fadeIn()
-        }).eq(0).addClass('active')
-})
+
