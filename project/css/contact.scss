@@ -1,0 +1,47 @@
+.contact{
+  padding: 52px 0 90px 0;
+}
+
+.contact__row{
+  display: flex;
+  margin-bottom: 29px;
+  flex-wrap: wrap;
+}
+
+.contact__wrap{
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #343B4C !important;
+  height: 25px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.contact__info{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  color: #343B4C;
+}
+
+.contact__inn{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #343B4C;
+}
+
+.fix__contact{
+  margin: 0!important;
+  align-items: center;
+}
+
+.contact__fix{
+  padding-left: 0 !important;
+}
