@@ -1,0 +1,1 @@
+"use strict";const swiper=new Swiper(".slider-container",{loop:!0,pagination:{el:".swiper-pagination",clickable:!0}});
