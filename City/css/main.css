@@ -344,7 +344,7 @@ header {
 }
 
 .first-screen {
-  background: url("../img/bg-main.png") center no-repeat;
+  background: url("../img/bg-main.webp") center no-repeat;
   background-size: cover;
   padding: 260px 0 148px 0;
 }
@@ -526,7 +526,7 @@ header {
 }
 
 .map {
-  background: url("../img/map.png") center no-repeat;
+  background: url("../img/map.webp") center no-repeat;
   background-size: cover;
   padding: 133px 0 147px 0;
 }
