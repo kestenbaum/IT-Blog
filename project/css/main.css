@@ -673,6 +673,7 @@ main {
   box-sizing: border-box;
   box-shadow: 0 4px 26px rgba(0, 0, 0, 0.57);
   border-radius: 5px;
+  margin: 0 24px;
 }
 
 .review {
