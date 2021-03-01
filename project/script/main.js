@@ -1,8 +1,7 @@
 'use strict'
 let  popup = document.querySelector('.popup'),
     burger = document.querySelector('.burger__wrap'),
-    headerNav = document.querySelector('.header-list'),
-    headerLink = document.querySelectorAll('.header-link')
+    headerNav = document.querySelector('.header-list')
 
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters
@@ -79,10 +78,9 @@ $(function () {
 //         callbacks: {
 //             ajaxContentAdded: function() {
 //                 var currentUrl = window.location.href;
-//                 var nclass = document.querySelectorAll('.mysite');
+//                 var nclass = document.querySelectorAll('.politic');
 //                 for (var i = 0; i < nclass.length; i++) {
 //                     nclass[i].innerHTML = '<a href="' + currentUrl + '">' + currentUrl + '</a>';
-//
 //                 }
 //             }
 //         },
