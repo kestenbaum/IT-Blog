@@ -10,7 +10,7 @@ burger.onclick = function (){
 window.onclick = function (a){
     let target = a.target
 
-    if(target.classList.contains('mb-0')) {
+    if(target.classList.contains('btn-link')) {
         target.classList.toggle('btn__card--active')
     }
     if(target.classList.contains('nav-link')) {
