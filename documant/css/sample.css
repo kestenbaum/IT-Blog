@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body { font-family: Avenir, 'Roboto',"Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif }
+
+*, ::after, ::before { box-sizing: border-box }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+.myAccordion-list li a {
+  display: block;
+  border-bottom: 1px solid #eaeaea;
+  padding: 1rem;
+  font-size:.9rem
+}
+
+.accordion-link{
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.myAccordion-list li a:hover { background-color: #fafafa }
+
+.myAccordion-list li:last-child a { border-bottom: none }
+
+.myAccordion-list>li>ul li a { padding: 1rem 2rem }
+/*# sourceMappingURL=sample.css.map */

@@ -1,0 +1,2 @@
+.ac ul{display:none}.ac-list-item{position:relative}.ac-btn{display:flex;justify-content:center;align-items:center;width:1rem;height:1rem;position:absolute;top:1rem;right:10px}.ac-btn::after{content:"+"}.ac .is-open>.ac-list{display:block}.ac .is-open>.ac-btn::after{content:"-"}.ac--animation ul{display:block;max-height:0;transition:max-height .3s ease;overflow:hidden}.ac--animation .is-open>.ac-list{max-height:500px}
+/*# sourceMappingURL=simple-accordion.css.map */
