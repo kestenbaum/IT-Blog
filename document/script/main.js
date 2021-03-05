@@ -50,11 +50,12 @@ const swip = new Swiper('.slider-container', {
     loop: true,
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.left',
+        prevEl: '.right',
     },
     slidesPerView: 1,
     spaceBetween: 30,
+    slidesPerGroup: 1,
     breakpoints: {
         690: {
             slidesPerView: 2,
