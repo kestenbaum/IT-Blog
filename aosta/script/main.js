@@ -73,7 +73,7 @@ $(function() {
 
 
 
-
+//==== якорь ====
 function removeLocationHash() {
     let noHashURL = window.location.href.replace(/#.*$/, '');
     window.history.replaceState('', document.title, noHashURL)
@@ -88,6 +88,7 @@ window.addEventListener("hashchange", function(event) {
 window.addEventListener("load", function() {
     removeLocationHash();
 });
+//==== /якорь ====
 
 //==== Gallery ====
 $(function() {
