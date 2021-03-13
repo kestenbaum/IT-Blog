@@ -332,7 +332,7 @@ main{
 //first-screen
 
 .first-screen{
-  background: url("../img/bg-main.webp") no-repeat center;
+  background: url("../img/bg-main.jpg") no-repeat center;
   background-size: cover;
   padding: 83px 0;
 }
@@ -1109,3 +1109,27 @@ footer{
     margin-bottom: 15px;
   }
 }
+
+/* gallery */
+
+.tab-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.img-setting{
+max-height: 250px;
+max-width: 100%;
+width: 100%;
+}
+
+.img-width{
+  max-height: 250px;
+  max-width: 100%;
+  width: 100%; 
+}
+
+/* /gallery */
