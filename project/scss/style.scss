@@ -29,7 +29,7 @@
       color: #fff;
    }
 }
-
+ 
 .call__number{
    span{
       color: #2B2D33;
@@ -198,11 +198,16 @@ main{
    &::before{
       content: '';
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 18%;
+      left: -7%;
       width: 100%;
-      background: url(../images/rhombus-5.svg) no-repeat center;
+      height: 488px;
+      width: 896px;
+      background: url(../images/romb.svg) no-repeat center;
       background-size: cover;
+      @media all and (max-width: 900px) {
+         display: none;
+      }
    }
 }
 .work-tittle {
