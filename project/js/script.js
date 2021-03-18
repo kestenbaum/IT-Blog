@@ -1,5 +1,5 @@
 'use strict'
-
+//==== slider ====
 const swiper = new Swiper('.swiper-container', {
    // Optional parameters
    loop: true,
@@ -14,3 +14,14 @@ const swiper = new Swiper('.swiper-container', {
         },
     },
  });
+//==== /slider ====
+
+//==== checkbox ====
+window.onclick = function(a) {
+    let target = a.target
+    if (target.classList.contains('design-list')) {
+        console.log('a');     
+    }
+}
+//==== /checkbox ====
+
