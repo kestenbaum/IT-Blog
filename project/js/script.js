@@ -2,7 +2,7 @@
 
 
 //==== slider ====
-const swiper = new Swiper('.slider-container', {
+/* const swiper = new Swiper('.slider-container', {
    // Optional parameters
    loop: true,
    slidesPerView: 1,
@@ -15,7 +15,7 @@ const swiper = new Swiper('.slider-container', {
             slidesPerView: 4,
         },
     },
- });
+ }); */
 //==== /slider ====
 
 
