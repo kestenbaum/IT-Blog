@@ -84,14 +84,27 @@ h1, h2, h3, h4, h5, h6 {
 .header-top__active::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: -16px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 16px;
- /*  background: rgba(0, 0, 0, 0.3);
-  z-index: -1;
-  border-radius: 50%;
-  filter: blur(10px); */
+  background: rgba(127,150,216,0.7);
+  filter: blur(12px);
+  border-radius: 78%;
+  z-index: 99;
+}
+
+.header-top__active::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 100;
 }
 
 .header-top__active .menu__link {
@@ -118,16 +131,56 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+
+
 .header-top__active .header-top__logo--active {
   display: block;
+}
+
+.header-top__active .menu__btn span{
+  background: #2B2D33;
+}
+
+.header-top__active .menu__btn::before{
+  background: #2B2D33;
+}
+
+.header-top__active .menu__btn::after{
+  background: #2B2D33;
+}
+
+
+.header-top__active .menu__btn.active::before{
+  background: #2B2D33;
+}
+
+.header-top__active .menu__btn.active::after{
+  background: #2B2D33;
 }
 
 .header-top__logo--active {
   display: none;
 }
 
+.header-top__logo{
+  position: relative;
+  z-index: 100;
+}
+
+.header-top__call{
+  position: relative;
+  z-index: 999;
+}
+
+/* .header-top__active .header-top__inner{
+  position: relative;
+  z-index: 999;
+  background: #fff;
+} */
+
 .header-top__inner {
-  padding: 20px 0;
+  padding: 20px 0;  
+
 }
 
 .header-main__inner {
@@ -2213,17 +2266,6 @@ main {
   margin: 0;
 }
 
-.slider-item__wrap {
- /*  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; */
-  min-height: 443px;
-}
-
 .slider-text {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -2281,3 +2323,32 @@ main {
   position: relative;
   z-index: 999;
 }
+
+.helper-pd{
+  flex-wrap: wrap;
+}
+
+.helper-test__item {
+  min-height: 197px;
+  min-width: 197px;
+  margin-bottom: 60px;
+}
+
+.row-partners{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media all and (max-width: 894px){
+  .slider-list{
+    flex-direction: column;
+  }
+  .slider-item__list{
+    margin: 0;
+  }
+  .helper-test__arrs-item span{
+    display: none;
+  }
+}
+
+
