@@ -76,48 +76,57 @@
 
 
 //==== comand ====
-.header{
-   background: #fff; 
-   height: 0;
-}
-.header-top{
+
+.header-top__active{
    position: fixed;
    top: 0;
    left: 0;
    width: 100%;
    z-index: 9999;
    background-color: #fff;
-   &::before{
+   box-shadow: 0 0 16px rgb(#4F72D9 / 25%);
+   &::after{
       content: '';
       position: absolute;
-      bottom: -16px;
+      bottom: 0;
       left: 0;
       width: 100%;
-      background: url(../images/bgh.png) no-repeat center;
-      background-size: cover;
       height: 16px;
    }
+   .menu__link{
+      color: #2B2D33;
+      @media all and (max-width: 1150px) {
+         color: #fff;
+      }
+   }
+   .call__number{
+      span{
+         color: #2B2D33;
+         @media all and (max-width: 1150px) {
+            color: #fff;
+         }
+      }
+   }
+   .header-top__logo{
+      display: none;
+   }
+   .header-top__logo--active{
+      display: block;
+   }
+}
+
+.header-top__logo--active{
+   display: none;
 }
 
 .header-top__inner{
    padding: 20px 0;
 }
 
-.menu__link{
-   color: #2B2D33;
-   @media all and (max-width: 1150px) {
-      color: #fff;
-   }
+.header-main__inner{
+   padding-top: 110px;
 }
- 
-.call__number{
-   span{
-      color: #2B2D33;
-      @media all and (max-width: 1150px) {
-         color: #fff;
-      }
-   }
-}
+
 
 .menu__btn{
    span{
@@ -578,7 +587,7 @@ main{
       }
 } */
 
-.des-2{
+/* .des-2{
    position: relative;
    z-index: 99;
    &::after{
@@ -594,7 +603,7 @@ main{
       z-index: 999;
    }
 }
-
+ */
 
 .design-list__item {
    width: 100%;
@@ -649,7 +658,7 @@ main{
    position: relative;
    max-width: 220px !important;
    z-index: 999;
-   &::after{
+/*    &::after{
       content: '';
       position: absolute;
       top: 50%;
@@ -660,7 +669,7 @@ main{
       background: url(../images/play.png) no-repeat center;
       background-size: cover;
       z-index: 999;
-   }
+   } */
 }
 
 
@@ -1651,10 +1660,10 @@ main{
    margin: 0;
 }
 
-.slider-item{
+.slider-item__wrap{
    display: flex;
-    flex-direction: column;
-    min-height: 443px;
+   flex-direction: column;
+   min-height: 443px;
 }
 
 .slider-text {
@@ -1703,3 +1712,6 @@ main{
    margin-bottom: 75px;
 }
 //==== /helper ====
+
+
+

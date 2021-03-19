@@ -72,12 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-.header {
-  background: #fff;
-  height: 0;
-}
-
-.header-top {
+.header-top__active {
   position: fixed;
   top: 0;
   left: 0;
@@ -86,39 +81,57 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
 }
 
-.header-top::before {
+.header-top__active::after {
   content: '';
   position: absolute;
-  bottom: -16px;
+  bottom: 0;
   left: 0;
   width: 100%;
-  background: url(../images/bgh.png) no-repeat center;
-  background-size: cover;
   height: 16px;
+ /*  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(10px); */
+}
+
+.header-top__active .menu__link {
+  color: #2B2D33;
+}
+
+@media all and (max-width: 1150px) {
+  .header-top__active .menu__link {
+    color: #fff;
+  }
+}
+
+.header-top__active .call__number span {
+  color: #2B2D33;
+}
+
+@media all and (max-width: 1150px) {
+  .header-top__active .call__number span {
+    color: #fff;
+  }
+}
+
+.header-top__active .header-top__logo {
+  display: none;
+}
+
+.header-top__active .header-top__logo--active {
+  display: block;
+}
+
+.header-top__logo--active {
+  display: none;
 }
 
 .header-top__inner {
   padding: 20px 0;
 }
 
-.menu__link {
-  color: #2B2D33;
-}
-
-@media all and (max-width: 1150px) {
-  .menu__link {
-    color: #fff;
-  }
-}
-
-.call__number span {
-  color: #2B2D33;
-}
-
-@media all and (max-width: 1150px) {
-  .call__number span {
-    color: #fff;
-  }
+.header-main__inner {
+  padding-top: 110px;
 }
 
 .menu__btn span {
@@ -351,6 +364,8 @@ main {
 }
 
 .col-work {
+  position: relative;
+  z-index: 999;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(33.333% - 20px);
           flex: 0 0 calc(33.333% - 20px);
@@ -696,25 +711,23 @@ main {
          z-index: 999;
       }
 } */
-.des-2 {
-  position: relative;
-  z-index: 99;
+/* .des-2{
+   position: relative;
+   z-index: 99;
+   &::after{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30px;
+      height: 30px;
+      background: url(../images/play.png) no-repeat center;
+      background-size: cover;
+      z-index: 999;
+   }
 }
-
-.des-2::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 30px;
-  height: 30px;
-  background: url(../images/play.png) no-repeat center;
-  background-size: cover;
-  z-index: 999;
-}
-
+ */
 .design-list__item {
   width: 100%;
   min-width: 220px;
@@ -775,20 +788,18 @@ main {
   position: relative;
   max-width: 220px !important;
   z-index: 999;
-}
-
-.testimonials-btns__item-inner::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 30px;
-  height: 30px;
-  background: url(../images/play.png) no-repeat center;
-  background-size: cover;
-  z-index: 999;
+  /*    &::after{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30px;
+      height: 30px;
+      background: url(../images/play.png) no-repeat center;
+      background-size: cover;
+      z-index: 999;
+   } */
 }
 
 .design-list:hover .design-list__item {
@@ -975,6 +986,19 @@ main {
   max-width: 185px;
   height: 37px;
   margin: 50px auto 0 auto;
+  position: relative;
+  z-index: 999;
+}
+
+.tittle-company {
+  padding-top: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 33px;
+  letter-spacing: 0.03em;
+  margin-bottom: 25px;
 }
 
 .about-company {
@@ -1346,6 +1370,16 @@ main {
       flex-wrap: wrap;
 }
 
+.statistics-item{
+  position: relative;
+  z-index: 999;
+}
+
+.statistics-links{
+  display: flex;
+  align-items: center;
+}
+
 @media all and (max-width: 550px) {
   .statistics-list {
     -webkit-box-orient: vertical;
@@ -1676,6 +1710,17 @@ main {
 
 .relize-project {
   background: #fff;
+  position: relative;
+  z-index: 999;
+}
+
+.real-bg2 {
+  position: absolute;
+  top: 172px;
+  left: -550px;
+  width: 100%;
+  height: 485px;
+  z-index: 99;
 }
 
 .young-home {
@@ -1738,7 +1783,28 @@ main {
 .features-project {
   padding: 60px 0px 110px 0px;
   background: #EDEBE9;
+  position: relative;
+  z-index: 999;
 }
+
+.feat-bg {
+  position: absolute;
+  top: -484px;
+  left: 450px;
+  width: 100%;
+  height: 485px;
+  z-index: 999;
+}
+
+.feat-bg2 {
+  position: absolute;
+  top: 4px;
+  left: 450px;
+  width: 100%;
+  height: 485px;
+  z-index: 999;
+}
+
 
 .features-tittle {
   font-family: 'Montserrat', sans-serif;
@@ -1838,6 +1904,17 @@ main {
 .review {
   padding: 70px 0px 94px 0px;
   background: #fff;
+  position: relative;
+  z-index: 999;
+}
+
+.review-bg2 {
+  position: absolute;
+  top: 0;
+  left: 350px;
+  width: 100%;
+  height: 485px;
+  z-index: 99;
 }
 
 .review-tittle {
@@ -1924,6 +2001,17 @@ main {
 .form-review {
   padding: 64px 0px 170px 0px;
   background: #EDEBE9;
+  position: relative;
+  z-index: 999;
+}
+
+.review-bg3 {
+  position: absolute;
+  top: 310px;
+  left: 150px;
+  width: 100%;
+  height: 485px;
+  z-index: 99;
 }
 
 @media all and (max-width: 500px) {
@@ -1956,6 +2044,17 @@ main {
 .rel-project {
   background: #fff;
   padding: 35px 0px 150px 0px;
+  position: relative;
+  z-index: 999;
+}
+
+.real-bg {
+  position: absolute;
+  top: 1150px;
+  left: -450px;
+  width: 100%;
+  height: 485px;
+  z-index: 99;
 }
 
 .rel-tittle {
@@ -1981,6 +2080,8 @@ main {
 }
 
 .col-card__prj {
+  position: relative;
+  z-index: 999;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(25% - 20px);
           flex: 0 0 calc(25% - 20px);
@@ -1995,11 +2096,13 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 24px 6px 34px 24px;
-  border: 2px solid #7F96D8;
   min-width: 305px;
   min-height: 402px;
   margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
 }
+
 
 .card-prj {
   width: 258px;
@@ -2007,6 +2110,89 @@ main {
   max-width: 100%;
   margin-bottom: 13px;
 }
+
+.line-top {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 2px;
+  background: #7F91D9;
+  animation: hovAnim 1s linear infinite;
+}
+.line-right {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 2px;
+  height: 10%;
+  background: #7F91D9;
+  animation: hovAnimh 1s linear infinite;
+}
+.line-left {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 10%;
+  background: #7F91D9;
+  animation: hovAnimh 1s linear infinite;
+}
+.line-bottom {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10%;
+  height: 2px;
+  background: #7F91D9;
+  animation: hovAnim 1s linear infinite;
+}
+
+
+@keyframes hovAnimh {
+  10% {height: 10%;}
+  20% {height: 20%;}
+  30% {height: 30%;}
+  40% {height: 40%;}
+  50% {height: 50%;}
+  60% {height: 60%;}
+  70% {height: 70%;}
+  80% {height: 80%;}
+  90% {height: 90%;}
+  100% {height: 100%;}
+}
+
+@keyframes hovAnim {
+  10% {width: 10%;}
+  20% {width: 20%;}
+  30% {width: 30%;}
+  40% {width: 40%;}
+  50% {width: 50%;}
+  60% {width: 60%;}
+  70% {width: 70%;}
+  80% {width: 80%;}
+  90% {width: 90%;}
+  100% {width: 100%;}
+}
+
+.card__prj-wrap::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: url(../images/bg-card.svg) no-repeat center;
+  background-size: cover;
+}
+
+
+
 
 .card-prj__tittle {
   font-family: 'Montserrat', sans-serif;
@@ -2027,14 +2213,14 @@ main {
   margin: 0;
 }
 
-.slider-item {
-  display: -webkit-box;
+.slider-item__wrap {
+ /*  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
+          flex-direction: column; */
   min-height: 443px;
 }
 
@@ -2089,4 +2275,9 @@ main {
 
 .helper__info-tittle {
   margin-bottom: 75px;
+}
+
+.helper-test__arrs-item-next{
+  position: relative;
+  z-index: 999;
 }
