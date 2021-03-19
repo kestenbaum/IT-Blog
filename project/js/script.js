@@ -1,6 +1,8 @@
 'use strict'
+
+
 //==== slider ====
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.slider-container', {
    // Optional parameters
    loop: true,
    slidesPerView: 1,
@@ -15,18 +17,42 @@ const swiper = new Swiper('.swiper-container', {
     },
  });
 //==== /slider ====
-const swip = new Swiper('.swiper-test', {
-    // Optional parameters
+
+
+//==== slider ====
+const swip = new Swiper('.swiper-container', {
     loop: true,
-    spaceBetween: 30,
-    // Navigation arrows
     navigation: {
       nextEl: '.helper-test__arrs-item-next',
       prevEl: '.helper-test__arrs-item-prev',
     },
+    slidesPerView: 1,
+    spaceBetween: 30,
+    breakpoints: {
+        800: {
+            slidesPerView: 1,
+        },
+        1148: {
+            slidesPerView: 1,
+        },
+    },
   });
+//==== /slider ====
 
-//==== slider ====
+
+ //==== scroll ====
+ 
+ window.onscroll = function(){
+    let header = document.querySelector('.header-top')
+
+    if (window.pageYOffset > 0){
+        header.classList.add('header-top__active')
+    } else {
+        header.classList.remove('header-top__active')
+    }
+ }
+ //==== /scroll ==== 
+
 
 
 //==== checkbox ====
