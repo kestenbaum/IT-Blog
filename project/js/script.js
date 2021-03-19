@@ -15,6 +15,19 @@ const swiper = new Swiper('.swiper-container', {
     },
  });
 //==== /slider ====
+const swip = new Swiper('.swiper-test', {
+    // Optional parameters
+    loop: true,
+    spaceBetween: 30,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.helper-test__arrs-item-next',
+      prevEl: '.helper-test__arrs-item-prev',
+    },
+  });
+
+//==== slider ====
+
 
 //==== checkbox ====
 window.onclick = function(a) {
