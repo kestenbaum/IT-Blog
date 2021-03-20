@@ -2,9 +2,10 @@
 
 
 //==== slider ====
-/* const swiper = new Swiper('.slider-container', {
+new Swiper('.slider-container', {
+    slidesPerView: 4,
    // Optional parameters
-   loop: true,
+  /*  loop: true,
    slidesPerView: 1,
    spaceBetween: 30,
    breakpoints: {
@@ -14,14 +15,14 @@
         1148: {
             slidesPerView: 4,
         },
-    },
- }); */
+    }, */
+ });
 //==== /slider ====
 
 
 //==== slider ====
-const swip = new Swiper('.swiper-container', {
-    loop: true,
+new Swiper('.slid-cont', {
+    /* loop: true, */
     navigation: {
       nextEl: '.helper-test__arrs-item-next',
       prevEl: '.helper-test__arrs-item-prev',
