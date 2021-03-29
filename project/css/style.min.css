@@ -548,7 +548,7 @@ img.mfp-img {
   }
 }
 
-@charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -1338,6 +1338,15 @@ ul, li {
       flex-wrap: wrap;
 }
 
+@media all and (max-width: 684px){
+  .footer__inner{
+    flex-direction: column;
+  }
+  .footer-social{
+    margin-bottom: 20px;
+  }
+}
+
 .footer__col {
   margin-bottom: 10px;
 }
@@ -1421,7 +1430,7 @@ ul, li {
     position: fixed;
     left: -300px;
     top: 0;
-    height: 100%;
+    height: 100vh !important;
     width: 300px;
     -webkit-transition: .4s;
     -o-transition: .4s;
@@ -1617,15 +1626,51 @@ ul, li {
   .helper-test__arrs {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+       /*  -ms-flex-direction: column;
+            flex-direction: column; */
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+            justify-content: space-between !important;
   }
   .helper-test__arrs-item {
     margin-right: 0;
     text-align: center;
     margin: 10px 0;
   }
+}
+
+
+.form__input{
+  padding-left: 15px;
+}
+
+@media all and (max-width: 1300px){
+  .form-contact{
+    flex-direction: column;
+  }
+  .phone{
+    width: 100%;
+    max-width: 403px;
+  }
+  .name{
+    width: 100%;
+    max-width: 403px;
+  }
+}
+
+.helper-test__item{
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.quiz-active{
+  /* border: 3px solid #0b0b0b; */
+  /* transform: scale(1.03); */
+  border-radius: 35px;
+  transition: all .3s;
+}
+
+.first-inp{
+  max-width: 403px;
 }
