@@ -5,4 +5,4 @@ This is a project that was carried out as a freelance project by order of the co
 ## CSS/SCSS
 ## JS
 
-## Link https://kestenbaum.github.io/IT-Work/
+## Link  https://kestenbaum.github.io/IT-Blog/
